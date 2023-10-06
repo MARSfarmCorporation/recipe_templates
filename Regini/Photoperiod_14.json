@@ -28,21 +28,7 @@
                 0,
                 1
               ],
-              "setting": 70
-            },
-            {
-              "start_time": [
-                9,
-                5
-              ],
-              "setting": 80
-            },
-            {
-              "start_time": [
-                23,
-                5
-              ],
-              "setting": 70
+              "setting": 60
             }
           ]
         },
@@ -213,13 +199,6 @@
               "start_time": [
                 23,
                 1
-              ],
-              "setting": 80
-            },
-            {
-              "start_time": [
-                0,
-                2
               ],
               "setting": 80
             }
