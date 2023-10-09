@@ -1,0 +1,142 @@
+I want to convert those settings we discovered for growing a plant into a different format. Please remember these rules and help me to begin that outline. Start by providing me an outline of the steps, their start times, and the setting values.
+ 
+--the variable of start_time inside of each step is formatted as [hour, minute] and it should be assumed that each phase is a 24 hour period of time. If the first start_time in light_intensity is at [9, 5] and the second is at [22, 35] then the first settings will run from 9:05 AM until 10:35 PM (photoperiod of 13.5 hours)
+--Always begin the first start_time at [0, 1] for everything except pump_amount.
+
+--settings for pump_amount are in ML of water. Always begin the first start_time for this step 2 hours before the photoperiod begins. Calculate the number of required start_times by dividing the total daily ML of water required by 80 ML (max amont per start_time) until the required amount is added (add a comments to the step to indicate the total amount added). 
+--settings for temperature are in Fahrenheit, with a max of 90F. Always provide a separate day and night temperature based on the photoperiod. (Add comments to indicate day/night and duration of thermoperiod).
+--circulation fan should always be "on" with a setting of 1. 
+--settings for light_intensity is on a scale of 0-255, here is the mol of photons per meter per day at germination height in the center of MV1 for various photoperiods at max light_intensity. Add comments to indicate the calculated photoperiod, the lights that are on, and DLI being provided. The table below shows light_intensity settings and the corresponding value (umol per meter per second) that can be used to calculate photoperiod. For example, if the light_intensity setting was [0, 255, 255, 255] for 10 hours that would provide a DLI of 16.128 and if it was [0, 255, 255, 0] then it would provide a DLI of 8.64.
+
+-White at 100% [0, 0, 0, 255]: 204.7
+-Red & Blue at 100% 255 [0, 255, 255, 0]: 240
+All colors at 100% [0, 255, 255, 255]: 448
+Far-red at 100% [255, 0, 0, 0]: 3.7 (do not use unless explicitly told)
+
+
+--see below example recipe
+{
+  "_id": {
+    "$oid": "643f128df313eed0ff251b03"
+  },
+  "model_name": "TemplateRecipe",
+  "recipe_name": "MV1_One_Phase_Bok_Choy_Spring_2023",
+  "recipe_variable": "Airflow - ON, 14 Hour Days, Day Temp - 80F, Night Temp - 70F, Irrigation - 320ml/day, Day Light Integral - 18.3/mol - 78% white, 4% blue, 15% red",
+  "phases": [
+    {
+      "name": "vegetative",
+      "phase_start": 0,
+      "step": [
+        {
+          "circulation_fan": [
+            {
+              "start_time": [
+                0,
+                1
+              ],
+              "setting": 1
+            }
+          ]
+        },
+        {
+          "temperature": [
+            {
+              "start_time": [
+                0,
+                1
+              ],
+              "setting": 70
+            },
+            {
+              "start_time": [
+                9,
+                5
+              ],
+              "setting": 80
+            },
+            {
+              "start_time": [
+                23,
+                5
+              ],
+              "setting": 70
+            }
+          ]
+        },
+        {
+          "pump_amount": [
+            {
+              "start_time": [
+                9,
+                5
+              ],
+              "setting": 80
+            },
+            {
+              "start_time": [
+                9,
+                6
+              ],
+              "setting": 80
+            },
+            {
+              "start_time": [
+                9,
+                7
+              ],
+              "setting": 80
+            },
+            {
+              "start_time": [
+                9,
+                8
+              ],
+              "setting": 80
+            }
+          ]
+        },
+        {
+          "light_intensity": [
+            {
+              "start_time": [
+                0,
+                1
+              ],
+              "setting": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "start_time": [
+                9,
+                5
+              ],
+              "setting": [
+                0,
+                255,
+                255,
+                255
+              ]
+            },
+            {
+              "start_time": [
+                23,
+                5
+              ],
+              "setting": [
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
