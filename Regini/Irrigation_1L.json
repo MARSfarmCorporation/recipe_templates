@@ -1,1 +1,149 @@
-{"model_name": "tbd"}
+{
+  "_id": {
+    "$oid": "6572a4a72d18e36d7d3d6651"
+  },
+  "model_name": "TemplateRecipe",
+  "recipe_name": "Irrigation 1000 ML",
+  "recipe_variable": "Airflow - ON, 24 Hour Days, Day Temp - 60F, Night Temp - 60F, Irrigation - 1000ml/day, Light - 12.96/mol/day - 100 red, 50 blue, 50 white umol/sec",
+  "phases": [
+    {
+      "name": "vegetative",
+      "phase_start": 0,
+      "step": [
+        {
+          "circulation_fan": [
+            {
+              "start_time": [
+                0,
+                1
+              ],
+              "setting": 1
+            }
+          ]
+        },
+        {
+          "temperature": [
+            {
+              "start_time": [
+                0,
+                1
+              ],
+              "setting": 60
+            }
+          ]
+        },
+        {
+          "pump_amount": [
+            {
+              "start_time": [
+                0,
+                1
+              ],
+              "setting": 80
+            },
+            {
+              "start_time": [
+                1,
+                1
+              ],
+              "setting": 80
+            },
+            {
+              "start_time": [
+                2,
+                1
+              ],
+              "setting": 80
+            },
+            {
+              "start_time": [
+                4,
+                1
+              ],
+              "setting": 80
+            },
+            {
+              "start_time": [
+                6,
+                1
+              ],
+              "setting": 80
+            },
+            {
+              "start_time": [
+                8,
+                1
+              ],
+              "setting": 80
+            },
+            {
+              "start_time": [
+                10,
+                1
+              ],
+              "setting": 80
+            },
+            {
+              "start_time": [
+                12,
+                1
+              ],
+              "setting": 80
+            },
+            {
+              "start_time": [
+                14,
+                1
+              ],
+              "setting": 80
+            },
+            {
+              "start_time": [
+                16,
+                1
+              ],
+              "setting": 80
+            },
+            {
+              "start_time": [
+                18,
+                1
+              ],
+              "setting": 80
+            },
+            {
+              "start_time": [
+                20,
+                1
+              ],
+              "setting": 80
+            },
+            {
+              "start_time": [
+                22,
+                1
+              ],
+              "setting": 80
+            }
+          ]
+        },
+        {
+          "light_intensity": [
+            {
+              "start_time": [
+                0,
+                1
+              ],
+              "setting": [
+                0,
+                207,
+                150,
+                56
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
