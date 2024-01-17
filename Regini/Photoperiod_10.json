@@ -1,10 +1,10 @@
 {
   "_id": {
-    "$oid": "65203207cefe88e72f61cb51"
+    "$oid": "6572af25a12e81f7f87e91fb"
   },
   "model_name": "TemplateRecipe",
-  "recipe_name": "Photoperiod: 10",
-  "recipe_variable": "Airflow - ON, 10 Hour Days, Day Temp - 60F, Night Temp - 60F, Irrigation - 2000ml/day, Light - 12.96/mol/day - 100 red, 50 blue, 200 white umol/sec",
+  "recipe_name": "Photoperiod: 10 (240 ML)",
+  "recipe_variable": "Airflow - ON, 10 Hour Days, Day Temp - 60F, Night Temp - 60F, Irrigation - 240ml/day, Light - 12.96/mol/day - 100 red, 50 blue, 200 white umol/sec",
   "phases": [
     {
       "name": "vegetative",
@@ -36,76 +36,6 @@
           "pump_amount": [
             {
               "start_time": [
-                0,
-                1
-              ],
-              "setting": 80
-            },
-            {
-              "start_time": [
-                0,
-                2
-              ],
-              "setting": 80
-            },
-            {
-              "start_time": [
-                1,
-                1
-              ],
-              "setting": 80
-            },
-            {
-              "start_time": [
-                2,
-                1
-              ],
-              "setting": 80
-            },
-            {
-              "start_time": [
-                3,
-                1
-              ],
-              "setting": 80
-            },
-            {
-              "start_time": [
-                4,
-                1
-              ],
-              "setting": 80
-            },
-            {
-              "start_time": [
-                5,
-                1
-              ],
-              "setting": 80
-            },
-            {
-              "start_time": [
-                6,
-                1
-              ],
-              "setting": 80
-            },
-            {
-              "start_time": [
-                7,
-                1
-              ],
-              "setting": 80
-            },
-            {
-              "start_time": [
-                8,
-                1
-              ],
-              "setting": 80
-            },
-            {
-              "start_time": [
                 9,
                 1
               ],
@@ -113,99 +43,15 @@
             },
             {
               "start_time": [
-                10,
-                1
+                9,
+                2
               ],
               "setting": 80
             },
             {
               "start_time": [
-                11,
-                1
-              ],
-              "setting": 80
-            },
-            {
-              "start_time": [
-                12,
-                1
-              ],
-              "setting": 80
-            },
-            {
-              "start_time": [
-                13,
-                1
-              ],
-              "setting": 80
-            },
-            {
-              "start_time": [
-                14,
-                1
-              ],
-              "setting": 80
-            },
-            {
-              "start_time": [
-                15,
-                1
-              ],
-              "setting": 80
-            },
-            {
-              "start_time": [
-                16,
-                1
-              ],
-              "setting": 80
-            },
-            {
-              "start_time": [
-                17,
-                1
-              ],
-              "setting": 80
-            },
-            {
-              "start_time": [
-                18,
-                1
-              ],
-              "setting": 80
-            },
-            {
-              "start_time": [
-                19,
-                1
-              ],
-              "setting": 80
-            },
-            {
-              "start_time": [
-                20,
-                1
-              ],
-              "setting": 80
-            },
-            {
-              "start_time": [
-                21,
-                1
-              ],
-              "setting": 80
-            },
-            {
-              "start_time": [
-                22,
-                1
-              ],
-              "setting": 80
-            },
-            {
-              "start_time": [
-                23,
-                1
+                9,
+                3
               ],
               "setting": 80
             }
