@@ -1,0 +1,77 @@
+{
+  "_id": {
+    "$oid": "657b6f0282ee8821d5b69730"
+  },
+  "model_name": "TemplateRecipe",
+  "recipe_variable": "Airflow - ON, No Irrigation, Max Light, Room Temp, 16h photoperiod",
+  "recipe_name": "Max_Light_16hr_No_Water_60F",
+  "phases": [
+    {
+      "name": "vegetative",
+      "phase_start": 0,
+      "step": [
+        {
+          "circulation_fan": [
+            {
+              "start_time": [
+                0,
+                1
+              ],
+              "setting": 1
+            }
+          ]
+        },
+        {
+          "temperature": [
+            {
+              "start_time": [
+                0,
+                1
+              ],
+              "setting": 60
+            }
+          ]
+        },
+        {
+          "pump_amount": [
+            {
+              "start_time": [
+                9,
+                1
+              ],
+              "setting": 0
+            }
+          ]
+        },
+        {
+          "light_intensity": [
+            {
+              "start_time": [
+                7,
+                0
+              ],
+              "setting": [
+                0,
+                255,
+                255,
+                255
+              ]
+            },
+            {
+              "start_time": [
+                23,
+                0
+              ],
+              "setting": [
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
