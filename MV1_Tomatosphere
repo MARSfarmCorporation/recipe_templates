@@ -1,0 +1,124 @@
+{
+  "_id": {
+    "$oid": "644043ed24fce83490ffe47b"
+  },
+  "model_name": "TemplateRecipe",
+  "recipe_name": "MV1_Tomatosphere",
+  "recipe_variable": "Airflow - ON, 14 Hour Days, Day Temp - 75F, Night Temp - 60F, Irrigation - 320ml/day, Day Light Integral - 18.3/mol - 78% white, 4% blue, 15% red,  w/ 1% blue disrupt in mornings and no far-red",
+  "phases": [
+    {
+      "name": "vegetative",
+      "phase_start": 0,
+      "step": [
+        {
+          "circulation_fan": [
+            {
+              "start_time": [
+                0,
+                1
+              ],
+              "setting": 1
+            }
+          ]
+        },
+        {
+          "temperature": [
+            {
+              "start_time": [
+                0,
+                1
+              ],
+              "setting": 60
+            },
+            {
+              "start_time": [
+                6,
+                5
+              ],
+              "setting": 75
+            },
+            {
+              "start_time": [
+                20,
+                5
+              ],
+              "setting": 60
+            }
+          ]
+        },
+        {
+          "pump_amount": [
+            {
+              "start_time": [
+                9,
+                5
+              ],
+              "setting": 80
+            },
+            {
+              "start_time": [
+                9,
+                6
+              ],
+              "setting": 80
+            },
+            {
+              "start_time": [
+                9,
+                7
+              ],
+              "setting": 80
+            },
+            {
+              "start_time": [
+                9,
+                8
+              ],
+              "setting": 80
+            }
+          ]
+        },
+        {
+          "light_intensity": [
+            {
+              "start_time": [
+                0,
+                1
+              ],
+              "setting": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "start_time": [
+                9,
+                5
+              ],
+              "setting": [
+                0,
+                255,
+                255,
+                255
+              ]
+            },
+            {
+              "start_time": [
+                23,
+                5
+              ],
+              "setting": [
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
