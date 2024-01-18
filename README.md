@@ -39,14 +39,15 @@ Public recipes for use with the MARSfarm Version 1.
 ### Recipes available by Request*
 ----
 
+| Recipe Name | Circulation Fan 🌬️ | Temperature 🌡️ | Pump Amount 💧 | Light Intensity 💡 |
+|-------------|--------------------|----------------|----------------|--------------------|
 | [Temp: Thermoperiod](https://github.com/MARSfarmCorporation/recipe_templates/blob/main/Regini/Temp_Thermoperiod.json) | ON at 00:01 | 90°F at 00:01 and 60F at 18:01 | 80ml x 4 starting at 09:01 | [0, 207, 150, 56] PWM and off at 18:01 |
 | [Irrigation: 1L](https://github.com/MARSfarmCorporation/recipe_templates/blob/main/Regini/Irrigation_1L.json) | ON at 00:01 | 60F at 00:01 | 80ml x 12 starting at 00:01 | [0, 207, 150, 56] PWM and off at 18:01 |
 | [Irrigation: 500ML](https://github.com/MARSfarmCorporation/recipe_templates/blob/main/Regini/Irrigation_500ML.json) | ON at 00:01 | 60F at 00:01 | 80ml x 6 starting at 00:01 | [0, 207, 150, 56] PWM and off at 18:01 |
 | [Irrigation: 250ML](https://github.com/MARSfarmCorporation/recipe_templates/blob/main/Regini/Irrigation_250ML.json) | ON at 00:01 | 60F at 00:01 | 80ml x 3 starting at 00:01 | [0, 207, 150, 56] PWM and off at 18:01 |
 
-*these are currently disabled, but can be added back to your recipe list upon request
+*these are currently disabled but can be added back to your recipe list upon request
 
-- 
 ### Key Takeaways 🗝️
 - All recipes have the fan ON starting at 00:01. 🌬️
 - Temperature varies between 60°F, 82°F, and 90°F. 🌡️
