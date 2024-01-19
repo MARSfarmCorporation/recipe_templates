@@ -1,0 +1,101 @@
+{
+  "model_name": "TemplateRecipe",
+  "recipe_name": "Phoenix_2020_March_April",
+  "recipe_variable": "Airflow - ON, Variable Day Length, Day Temp - 78.1F in March, 82F in April, Night Temp - 54.5F in March, 60F in April, Irrigation - Adjusted for DLI, Light - Max",
+  "phases": [
+    {
+      "name": "March",
+      "phase_start": 0,
+      "step": [
+        {
+          "circulation_fan": [
+            {
+              "start_time": [0, 1],
+              "setting": 1
+            }
+          ]
+        },
+        {
+          "temperature": [
+            {
+              "start_time": [0, 1],
+              "setting": 54.5
+            },
+            {
+              "start_time": [5, 30],
+              "setting": 78.1
+            }
+          ]
+        },
+        {
+          "pump_amount": [
+            {
+              "start_time": [5, 30],
+              "setting": 73.77
+            }
+            // This setting is a one-time daily irrigation volume equivalent to the average March precipitation distributed throughout the day.
+          ]
+        },
+        {
+          "light_intensity": [
+            {
+              "start_time": [5, 30],
+              "setting": [0, 255, 255, 255]
+            },
+            {
+              "start_time": [24, 0],
+              "setting": [0, 0, 0, 0]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "April",
+      "phase_start": 31,
+      "step": [
+        {
+          "circulation_fan": [
+            {
+              "start_time": [0, 1],
+              "setting": 1
+            }
+          ]
+        },
+        {
+          "temperature": [
+            {
+              "start_time": [0, 1],
+              "setting": 60
+            },
+            {
+              "start_time": [2, 45],
+              "setting": 82
+            }
+          ]
+        },
+        {
+          "pump_amount": [
+            {
+              "start_time": [2, 45],
+              "setting": 19.69
+            }
+            // This setting is a one-time daily irrigation volume equivalent to the average April precipitation distributed throughout the day.
+          ]
+        },
+        {
+          "light_intensity": [
+            {
+              "start_time": [2, 45],
+              "setting": [0, 255, 255, 255]
+            },
+            {
+              "start_time": [24, 0],
+              "setting": [0, 0, 0, 0]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

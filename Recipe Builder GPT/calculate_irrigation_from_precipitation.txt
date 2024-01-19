@@ -1,0 +1,24 @@
+# Constants
+pot_size_inches = 3 # square pot side length in inches
+inches_to_meters = 0.0254 # conversion factor from inches to meters
+number_of_pots = 6 # total number of pots
+rainfall_may_inches = 4.72 # average rainfall in St. Louis in May in inches
+days_in_may = 31 # number of days in May
+
+# Calculations
+# Area of one pot in square meters
+area_one_pot_m2 = (pot_size_inches * inches_to_meters) ** 2
+
+# Total area for 6 pots in square meters
+total_area_m2 = area_one_pot_m2 * number_of_pots
+
+# Rainfall volume per area in May (120 mm = 120 liters/m² as 1 mm of rain on 1 m² is 1 liter)
+rainfall_volume_may_liters_per_m2 = rainfall_may_inches * 25.4 # converting inches to mm
+
+# Total Rainfall Volume for 6 Pots in May in liters
+total_rainfall_volume_may_liters = rainfall_volume_may_liters_per_m2 * total_area_m2
+
+# Daily Irrigation Requirement in liters
+daily_irrigation_requirement_liters = total_rainfall_volume_may_liters / days_in_may
+
+area_one_pot_m2, total_area_m2, total_rainfall_volume_may_liters, daily_irrigation_requirement_liters
