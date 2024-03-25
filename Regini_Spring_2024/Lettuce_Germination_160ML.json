@@ -1,6 +1,6 @@
 {
   "model_name": "TemplateRecipe",
-  "recipe_name": "Lettuce Germination (160ML, 78F)",
+  "recipe_name": "Lettuce Germination (160ML)",
   "recipe_variable": "Airflow - ON, Temp - 78F, Irrigation - 160ml/day, Light - 12.96/mol/day - 100 red, 50 blue, 50 white umol/sec",
   "phases": [
     {
